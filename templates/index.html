@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diabetes Predictor</title>
+</head>
+<body>
+    <h1>Diabetes Risk Predictor</h1>
+    <form method="POST">
+        Gender (0=Female, 1=Male, 2=Other): <input type="number" name="gender"><br><br>
+        Age: <input type="number" name="age"><br><br>
+        Hypertension (0=No, 1=Yes): <input type="number" name="hypertension"><br><br>
+        Heart Disease History (0=No, 1=Yes): <input type="number" name="heart_disease_history"><br><br>
+        BMI: <input type="number" step="0.01" name="bmi"><br><br>
+        HbA1c Level: <input type="number" step="0.1" name="hba1c_level"><br><br>
+        Blood Glucose Level: <input type="number" name="blood_glucose"><br><br>
+        Smoking History (0=Current, 1=Ever, 2=Former, 3=Never, 4=Not Current, 5=Unknown):
+        <input type="number" name="smoking_history"><br><br>
+        <input type="submit" value="Predict">
+    </form>
+    {% if prediction %}
+        <h2>Result: {{ prediction }}</h2>
+    {% endif %}
+</body>
+</html>
