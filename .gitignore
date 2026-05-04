@@ -1,0 +1,29 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# PyCharm
+.idea/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Dataset (download from Kaggle instead)
+diabetes_prediction_dataset.csv
+
+# Model file (too large for GitHub)
+*.pkl
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+*.env
+api_secrets.py
